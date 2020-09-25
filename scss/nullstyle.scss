@@ -1,0 +1,58 @@
+//=================обнуления====================================
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing:border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height: 100%;width: 100%;font-size: 100%; line-height:1; font-size: 14px; -ms-text-size-adjust:100%;}
+input,button,textarea{font-family: inherit;}
+a,a:visited{text-decoration: none;}
+body{	margin:0;padding: 0;}
+h1, h2, h3, h4, h5, h6, p, img { padding: 0; margin: 0; font-size:14px;font-weight: inherit;}
+nav{display: block;}
+ul li{list-style: none;}
+ul{padding: 0;margin:0; display: block;}
+li{display: block;}
+a{text-decoration: none; padding: 0; margin:0; display: block;}
+button{cursor: pointer;padding:0;margin: 0;border:0;}
+input::-ms-clear{display: none;}
+button::-moz-focus-inner{padding:0;border:0;}
+img{vertical-align: top;}
+//=================Шрифты====================================
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&display=swap');
+@font-face {font-family:'Conv_helvetica';src: url('../fonts/helvetica-lt-std-light.eot');src: local('☺'), url('../fonts/helvetica-lt-std-light.woff') format('woff'), url('../fonts/helvetica-lt-std-light.ttf') format('truetype'), url('../fonts/helvetica-lt-std-light.svg') format('svg');font-weight: normal;font-style: normal;}
+//================Основной Шрифт========================================
+body{font-family:Conv_helvetica; font-weight: 400}
+//================Переменные Брэйкпоинты================
+$md1:767px;
+$md2:575px;
+//==============================Основная сетка БрейкПоинтов=============
+.conteiner{
+	max-width: 968px;
+	margin: 0 auto;
+	padding: 0 10px 0 10px;
+	@media (max-width: $md1){
+		max-width: 100%;	
+	}
+	@media (max-width: $md2){
+		max-width: 100%;
+		padding: 0 0 0 0;
+	}
+}
+//==============================Стили для ".ibg" тот что JQ=============
+.ibg{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+	.ibg img{
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+                 
